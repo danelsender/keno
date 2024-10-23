@@ -1,6 +1,6 @@
-import random
+# import random
 import operator
-from numba import njit
+# from numba import njit
 import numpy as np
 import time
 
@@ -109,8 +109,9 @@ else:
    # Simulate n games
    n_games = int(input("Enter the number of games to simulate: "))
    
-   @njit()
+   # @njit()
    def multiple_games(n_games):
+      """Simulate multiple games of Keno."""
       total_wager = 0
       total_payout = 0
       for i in range(n_games):
